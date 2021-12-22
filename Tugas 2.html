@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Tugas 2</title>
+    </head>
+    <body>
+        <div id="container">
+            <p>Paragraph</p>
+            <p>P Baru</p>
+        </div>
+
+        <button onclick="kirim()">kirim</button>
+
+        <script>
+            function kirim() {
+                let elemen, teks, parent
+                //Buat node
+                elemen = document.createElement("p")
+                teks = document.createTextNode("P Baru")
+
+                // menambah child ke parentnya -->elemen
+                elemen.appendChild(teks) //
+                // seleksi parent untuk ditambah
+                parent = document.getElementById("container")
+
+                // menambah child di parent
+                parent.appendChild(elemen)
+            }
+        </script>
+    </body>
+</html>
